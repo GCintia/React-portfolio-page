@@ -30,10 +30,12 @@ function Projects(){
                     <img className="project-img img-third" alt="project" src="./images/COLORSCHEME.PNG"  /></a>
                     <p className="project-titles">Color Scheme Generator</p>
                     <p className="project-description text-third">
-                    Choose a color you like and get complementing palettes for your design.
+                    Choose a color with the pipette and get seven different complementing palettes
+                    to the chosen color. Use it for yor webpage or even to choose the color of the paint
+                    for your wall
                     The generator uses the color API. </p>
                 </div>
-                   <div className="project-item">
+                   <div className="project-item soon-proj">
                    <p className="soon-project">Coming soon...</p>
                     <img className="project-img img-fourth"  alt="project" src="./images/watchlistProj.PNG"  />
                      <p className="project-titles soon">Movie watchlist</p>
