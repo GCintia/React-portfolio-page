@@ -1,0 +1,463 @@
+/*VARIABLES*/
+:root {
+  --dark-bg: #244733 ;
+  --light-text: #edf0f2;
+  --dark-text: #3a3426;
+  --dark-btn: #3a3426;
+  --light-bg: #edf0f2;
+  --default-text: black;
+  --contrast-bg: #fff;
+}
+
+html, body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+/*MOBILE FIRST*/
+
+/*NAVBAR*/
+.nav-list{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  
+  
+}
+.list-item{
+  margin-right: 1em;
+  color: var(--dark-bg);
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+a:link, a:visited{
+  text-decoration: none;          
+  color: var(--dark-bg);
+  cursor: pointer;
+}
+a:hover{
+  text-decoration: underline; 
+  cursor: pointer;
+  
+}
+a:active, a:focus{
+  text-decoration: underline;
+  cursor: pointer;
+   
+}
+/*INTRO*/
+.personal-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-pic{
+  height: 10rem;
+  width: 9rem;
+  object-fit: cover;  
+}
+.name{
+  font-size: 1.8em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: .3em;
+  font-family: 'Space Mono', monospace;
+  
+}
+.occup{
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+.email-btn{
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+  border: none;
+  padding: .5em 2em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+.email-btn:focus,.email-btn:hover{
+  border: 3px solid var(--dark-btn); 
+  transform: scale(1.1, 1.1)  ;
+  cursor: pointer;
+}
+.link-img{
+  height: 1.5em;
+  width: 1.5em;
+  vertical-align: middle;
+  padding: 1em;
+}
+.link-img:focus, .link-img:hover{
+  background: var(--light-bg);
+  border: 1px solid var(--light-bg);
+ transform: scale(1.1, 1.1)  ;
+ cursor: pointer;
+}
+/*ABOUT */
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--light-bg);
+  padding-left: 1em;
+  padding-right: 1em;
+  
+  
+  
+}
+.about-title{
+  font-family: 'Space Mono', monospace;
+  font-size: 2em;
+  margin-bottom: .5em;
+  margin-top: .5em;
+}
+.about-sec{
+  text-align: center;
+}
+span{
+  font-weight: bold;
+}
+.resume-btn{
+  background-color: var(--dark-btn);
+  color: var(--light-text);
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  padding: .5em 2em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+.resume-btn:focus, .resume-btn:hover{
+  border: 3px solid var(--dark-bg);
+  transform: scale(1.1, 1.1)  ;
+  cursor: pointer;
+}
+
+/*SKILLS PAGE*/
+.skills-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: .2em;
+  margin-right: .2em;
+  background-color: var(--dark-bg);
+  height: 100vh;
+  margin-bottom: 0;
+  color: var(--light-text);
+ 
+}
+.skill-title{
+   margin-left: .2em;
+   margin-right: .2em;
+   font-family: 'Space Mono', monospace;
+}
+.logos{
+  display: grid;
+  grid-gap: .5em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-self: center;
+  grid-row-gap: 0;
+  justify-content: space-around;
+  align-items: center; 
+  grid-template-areas: 
+  "html css js react "
+  "texthtml textcss textjs textreact "
+  "py github canva figma"
+  "textpy textgit textcanva textfigma";
+  
+  
+}
+.logo-img{
+  height: 4em;
+  width: 4em; 
+}
+.logo-text-html{
+  grid-area: texthtml;
+  margin-left: .4em;
+}
+.logo-text-css{
+  grid-area: textcss;
+  margin-left: 1em;
+}
+.logo-text-js{
+  grid-area: textjs;
+  margin-right: .6em;
+}
+.logo-text-py{
+  grid-area: textpy;
+  margin-right: .2em
+}
+
+/*PROJECTS-PAGE*/
+
+.projects-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--light-bg);
+  color: var(--dark-bg)
+}
+.projects{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.project-img{
+  max-width: 400px;
+  height: 12em;
+  object-fit: cover;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: .5em;
+}
+.project-description{
+  max-width: 300px;
+  margin-bottom: 3em;
+  letter-spacing: 1px;
+  font-size: .9em;
+}
+.project-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.proj-title{
+  letter-spacing: 2px;
+  font-family: 'Space Mono', monospace;
+  margin-bottom: 1.5em;
+}
+.project-titles{
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: .2em;
+  margin-top: 0;
+}
+.repo-link:hover, .repo-link:focus{
+  transform: scale(1.1, 1.1)  ;
+  cursor: pointer;
+}
+/*COMING SOON*/
+.soon-project{
+  font-size: 1.2em;
+  margin: 0;
+  margin-bottom: .5em;
+  font-weight: 600;
+  font-family: 'Space Mono', monospace;
+}
+.img-fourth, .text-fourth{
+  opacity: 50%;
+  font-weight: 500;
+}
+.soon{
+  opacity: 50%
+}
+.click{
+  color: var(--dark-bg);
+  font-weight: 600;
+  
+  margin-bottom: 0;
+}
+.footer-link:hover, .footer-link:focus{
+  background: none;
+}
+
+
+/*DESKTOP VERSION*/
+@media (min-width: 500px){
+  body{
+      margin: 0;
+  }
+  /*HOME PAGE */
+ 
+  .nav-list{
+     display: flex;
+     justify-content: space-evenly;
+     width: 100%;
+     margin-bottom: 1em;
+     font-weight: 600;
+     
+
+  }
+  .list-item{
+    margin: 0;
+ 
+  }
+  .homepage{
+    height: 100vh;
+    margin-bottom: 0;
+    margin-left:  2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    padding-bottom: 0;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
+                0 4px 2px rgba(0,0,0,0.09), 
+                0 8px 4px rgba(0,0,0,0.09), 
+                0 16px 8px rgba(0,0,0,0.09),
+                0 32px 16px rgba(0,0,0,0.09);
+    
+  }
+ 
+  .flex{
+      display: grid;
+      grid-template-columns: repeat(2,1fr)
+  }
+  .personal-info{
+     margin-bottom: 0;
+     /*padding-bottom: 50vh;*/
+  }
+ 
+  .about-title{
+    font-weight: 400;
+    font-size: 3em;
+    margin-top: 2em;
+   
+    
+  }
+  .about-sec{
+      font-size: 1em;
+      text-align: center;
+      padding: 1em;
+      margin-left: 1em;
+      margin-right: 1em;
+  }
+  .resume-btn{
+      margin-top: 2.2em;
+  }
+  .profile-pic{
+      margin-top: 3em;
+  }
+  .email-btn{
+      margin-top: 2.1em;
+  }
+  .name{
+      margin-top: 1em;
+  }
+  
+    
+  }
+  /*SKILLS PAGE*/
+    /*RGBA(36,71,51,0.82);*/
+    .skills-page{
+      margin-left:  2em;
+      margin-right: 2em;
+      margin-bottom: 2em;
+      padding-bottom: 0;
+      box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
+                  0 4px 2px rgba(0,0,0,0.09), 
+                  0 8px 4px rgba(0,0,0,0.09), 
+                  0 16px 8px rgba(0,0,0,0.09),
+                  0 32px 16px rgba(0,0,0,0.09);
+              
+    }
+    .logos{
+      margin-bottom: 0;
+    }
+  .skill-title{
+      font-size: 3em;
+  }
+  .logos{
+      display: grid;
+      grid-gap: 2em;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-self: center;
+      grid-row-gap: 3;
+      justify-content: space-between;
+      align-items: center; 
+      grid-template-areas: 
+      "html css js react "
+      "texthtml textcss textjs textreact "
+      "py github canva figma"
+      "textpy textgit textcanva textfigma";
+      
+      
+  }
+  .logo-img{
+      height: 5em;
+      width: 5em; 
+  }
+  .logo-text-html{
+      grid-area: texthtml;
+      margin-left: .4em;
+  }
+  .logo-text-css{
+      grid-area: textcss;
+      margin-left: 1em;
+  }
+  .logo-text-js{
+      grid-area: textjs;
+      margin-right: .6em;
+  }
+  .logo-text-py{
+      grid-area: textpy;
+      margin-right: .2em
+  }
+  /*PROJECTS PAGE*/
+  .projects{
+      display: flex;
+      flex-direction: row;
+      margin-left: .6em;
+      margin-right: .6em;
+  }
+  .project-item{
+      text-align: justify;
+  }
+  .soon-project{
+      margin-top: -1.5em;
+  }
+  .proj-title{
+      font-size: 2.5em;
+  }
+  .projects-page{
+      height: 100vh;
+      margin-bottom: 0;
+      margin-left:  2em;
+      margin-right: 2em;
+      margin-bottom: 2em;
+      padding-bottom: 0;
+      box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
+                  0 4px 2px rgba(0,0,0,0.09), 
+                  0 8px 4px rgba(0,0,0,0.09), 
+                  0 16px 8px rgba(0,0,0,0.09),
+                  0 32px 16px rgba(0,0,0,0.09);
+                  
+  }
+  
+  .project-description{
+      margin-top: 2em;
+  }
+  .project-titles{
+      margin-top: 2em;;
+  }
+  .text-fourth{
+      margin-left: .2em;
+      margin-top: 1.7em;
+  }
+  .text-third{
+      margin-right: .5em;
+  }
+  .projects{
+      margin-left: 1em;
+      margin-right: 1em;
+  }
+  
+
+
+/*@media (min-width: 800px){
+  .about-title{
+      font-size: 3em;
+      margin-top: 1em;
+  }
+  .about-sec{
+    
+      margin-left: 1em;
+      margin-right: 1em;
+  }
+  .resume-btn{
+      margin-top: .6em;
+  }
+}*/
+
