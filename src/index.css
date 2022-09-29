@@ -64,7 +64,6 @@ a:active, a:focus{
   letter-spacing: 1px;
   margin-bottom: .3em;
   font-family: 'Space Mono', monospace;
-  
 }
 .occup{
   margin-top: 0;
@@ -104,9 +103,6 @@ a:active, a:focus{
   background: var(--light-bg);
   padding-left: 1em;
   padding-right: 1em;
-  
-  
-  
 }
 .about-title{
   font-family: 'Space Mono', monospace;
@@ -140,8 +136,7 @@ span{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: .2em;
-  margin-right: .2em;
+
   background-color: var(--dark-bg);
   height: 100vh;
   margin-bottom: 0;
@@ -154,13 +149,17 @@ span{
    font-family: 'Space Mono', monospace;
 }
 .logos{
+  max-width: 400px;
+  max-height: 300px;
   display: grid;
-  grid-gap: .5em;
+  margin-right: 1em;
+  margin-left: 1em;;
+  /*grid-gap: .5em;*/
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-self: center;
   grid-row-gap: 0;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center; 
   grid-template-areas: 
   "html css js react "
@@ -174,22 +173,11 @@ span{
   height: 4em;
   width: 4em; 
 }
-.logo-text-html{
-  grid-area: texthtml;
-  margin-left: .4em;
+.logo-text{
+  margin: 0;
+  margin-left: .5em;
 }
-.logo-text-css{
-  grid-area: textcss;
-  margin-left: 1em;
-}
-.logo-text-js{
-  grid-area: textjs;
-  margin-right: .6em;
-}
-.logo-text-py{
-  grid-area: textpy;
-  margin-right: .2em
-}
+
 
 /*PROJECTS-PAGE*/
 
@@ -238,6 +226,14 @@ span{
 .repo-link:hover, .repo-link:focus{
   transform: scale(1.1, 1.1)  ;
   cursor: pointer;
+}
+.img-second{
+  max-width: 250px;
+  height: 12em;
+  object-fit: cover;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: .5em;
 }
 /*COMING SOON*/
 .soon-project{
@@ -446,6 +442,10 @@ span{
   .soon-proj{
     margin-left: 1.5em;
   }
+  .project-item{
+    margin-left: 1em;
+    margin-right: 1em;
+  }
   
 
 
@@ -506,6 +506,14 @@ span{
   .img-second{
       margin-left: .2em;
       margin-right: .2em;
+  }
+  .img-second{
+    max-width: 300px;
+    height: 12em;
+    object-fit: cover;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: .5em;
   }
 }
 

@@ -11,10 +11,10 @@ function Skills(){
                 <img className="logo-img"  alt="javascript" src="./images/JS.png" />
                 <img className="logo-img"  alt="react" src="./images/REACT.png" />
                 
-                <p className="logo-text-html" > HTML </p>
-                <p className="logo-text-css" > CSS</p>
-                <p className="logo-text-js" > JAVA<br/>SCRIPT </p>
-                <p className="logo-text-react" > REACT</p>
+                <p className="logo-text html" > HTML </p>
+                <p className="logo-text css" > CSS</p>
+                <p className="logo-text js" > JAVA<br/>SCRIPT </p>
+                <p className="logo-text react" > REACT</p>
                 
                 
                 
