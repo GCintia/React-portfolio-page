@@ -21,11 +21,9 @@ html, body{
   display: flex;
   justify-content: center;
   list-style: none;
-  
-  
 }
 .list-item{
-  margin-right: 1em;
+  margin-right: .9em;
   color: var(--dark-bg);
   letter-spacing: 1px;
   margin-bottom: 1em;
@@ -149,11 +147,7 @@ span{
    font-family: 'Space Mono', monospace;
 }
 .logos{
-  max-width: 400px;
-  max-height: 300px;
   display: grid;
-  margin-right: 1em;
-  margin-left: 1em;;
   /*grid-gap: .5em;*/
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -166,7 +160,8 @@ span{
   "texthtml textcss textjs textreact "
   "py github canva figma"
   "textpy textgit textcanva textfigma";
-  
+  margin-right: 1em;
+  margin-left: 1em;
   
 }
 .logo-img{
@@ -262,7 +257,7 @@ span{
 
 
 /*DESKTOP VERSION*/
-@media (min-width: 600px){
+@media (min-width: 550px){
   body{
       margin: 0;
   }
@@ -472,15 +467,10 @@ span{
       margin-right: 1em;
       margin-left: 1em;
   }
-  .logos{
-      display: grid;
-      margin-right: 2em;
-      margin-left: 2em;
+  .links{
+      display: flex;
   }
-  .skills-page{
-      margin-left: 1em;
-      margin-right: 1em;
-  }
+
   .skill-title{
       margin-left: .2em;
       margin-right: .2em;
@@ -490,13 +480,7 @@ span{
      padding-right: 1em;
      text-align: center;
  } 
- .skills-page{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: var(--dark-bg);
-  color: var(--light-bg);
-  }
+
   .projects{
       display: flex;
       flex-direction: column;
@@ -515,5 +499,40 @@ span{
     margin-right: 1em;
     margin-bottom: .5em;
   }
+  .logo-img{
+      width: 3em;
+      height: 3em;
+  }
+  .logo-text{
+      font-size: .8em;
+  }
+  .logos{
+      padding: 0;
+      grid-gap: .5em;
+      text-align: center;
+  }
+  .skill-title{
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 2em;
+  }
+  .homepage, .skills-page, .projects-page{
+      box-shadow: none;
+      padding: 0;
+      margin: 0;
+      
+  }
+    .projects-page{
+    height: 100%;
+ }
+ .click{
+     margin: 1em;
+     text-align: center;
+ }
+ .link-img{
+     display: block;
+     margin: auto;
+ }
+    
 }
 
