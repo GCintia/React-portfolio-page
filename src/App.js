@@ -17,7 +17,7 @@ function App(){
                     <li className="list-item skills">
                         <Link to="/skills" >Skills</Link>
                     </li>
-                    <li className="list-item projects">
+                    <li className="list-item projects-list">
                         <Link to="/projects" >Projects</Link>
                     </li>
                 </ul>
