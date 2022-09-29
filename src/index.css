@@ -473,8 +473,17 @@ span{
       margin-left: 1em;
   }
   .logos{
+      display: grid;
       margin-right: 2em;
       margin-left: 2em;
+  }
+  .skills-page{
+      margin-left: 1em;
+      margin-right: 1em;
+  }
+  .skill-title{
+      margin-left: .2em;
+      margin-right: .2em;
   }
  .about{
      padding-left: 1em;
@@ -493,6 +502,10 @@ span{
       flex-direction: column;
       text-align: center;
       padding: 1em;
+  }
+  .img-second{
+      margin-left: .2em;
+      margin-right: .2em;
   }
 }
 
