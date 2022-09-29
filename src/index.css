@@ -262,7 +262,7 @@ span{
 
 
 /*DESKTOP VERSION*/
-@media (min-width: 500px){
+@media (min-width: 550px){
   body{
       margin: 0;
   }
