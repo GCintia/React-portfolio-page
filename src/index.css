@@ -533,6 +533,10 @@ span{
      display: block;
      margin: auto;
  }
+ .nav-list{
+  margin: auto;
+  width: 200px;
+}
     
 }
 
